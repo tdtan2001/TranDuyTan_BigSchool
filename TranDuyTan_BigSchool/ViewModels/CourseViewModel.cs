@@ -9,6 +9,8 @@ namespace TranDuyTan_BigSchool.ViewModels
 {
     public class CourseViewModel
     {
+
+
         public int Id { get; set; }
         [Required]
         public string Place { get; set; }
@@ -26,6 +28,7 @@ namespace TranDuyTan_BigSchool.ViewModels
         public string Action {
             get { return (Id != 0) ? "Update" : "Create"; }
         }
+
 
         public DateTime GetDateTime()
         {
